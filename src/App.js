@@ -22,7 +22,7 @@ function App() {
     const { questions, category, difficulty, type } = current;
     ev.preventDefault();
     if (questions > 50 || questions <= 0) {
-      alert("bro... , are u retared?");
+      alert("number of questions must be between 1 and 50");
     } else {
       setIsLoading(true);
       const url = `https://opentdb.com/api.php?amount=${questions}&category=${category}&difficulty=${difficulty}&type=${type}`;
